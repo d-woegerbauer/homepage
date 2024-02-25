@@ -6,21 +6,9 @@ import { FloatingNavBar } from "./FloatingNavbar";
 export function StartPageSparkles() {
   return (
     <>
-      <FloatingNavBar
-        navItems={[
-          {
-            name: "Home",
-            link: "/",
-          },
-          {
-            name: "About",
-            link: "/about",
-          },
-        ]}
-      ></FloatingNavBar>
       <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
         <h1 className="md:text-7xl text-2xl lg:text-7xl font-bold text-center text-white relative z-20 pt-20">
-          The beginning of something great
+          Developer, TypeScript lover, drone pilot
         </h1>
         <div className="w-[60rem] h-40 relative">
           {/* Gradients */}
@@ -42,12 +30,6 @@ export function StartPageSparkles() {
           {/* Radial Gradient to prevent sharp edges */}
           <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
         </div>
-      </div>
-      <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <h1 className="md:text-7xl text-2xl lg:text-7xl font-bold text-center text-white relative z-20 pt-20">
-          The beginning of something great
-        </h1>
-        
       </div>
     </>
   );
